@@ -1,0 +1,36 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.contenedor {
+    background-image: url(../assets/fondo_portafolio.jpg);
+    width: 100vw; 
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contenedor-2{
+    background: linear-gradient(to bottom, rgb(42, 42, 70), #0077cc);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sub-contenedor{
+    background-color: rgba(144, 144, 196, 0.315);
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    z-index: 1; 
+}
+.sub-contenedor-2{
+    height: 100%;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
