@@ -1,4 +1,5 @@
 import { Component, ElementRef, HostListener, } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -9,7 +10,7 @@ export class NavbarComponent {
 
   navbarScrolled: boolean = false;
 
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private router : Router) {}
 
   ngOnInit() {
     this.removeScrolledStyles();
@@ -26,25 +27,30 @@ export class NavbarComponent {
       this.removeScrolledStyles();
     }
   }
+
   applyScrolledStyles() {
     const navbarElement = this.el.nativeElement.querySelector('.custom-navbar');
 
     if (navbarElement) {
       navbarElement.style.backgroundColor = 'white';
     }
+
     const links = this.el.nativeElement.querySelectorAll('.nav-link');
     const h2 = this.el.nativeElement.querySelector('h2');
 
     if (links) {
-      links.forEach((link: { style: { color: string; }; }) => {
+      links.forEach((link: { style: { color: string; margin: string; }; }) => {
         link.style.color = 'black';
+        link.style.margin = '0'; // Agregar margen cero solo cuando haces scroll
       });
     }
 
     if (h2) {
       h2.style.color = 'black';
+      h2.style.margin = '0'; // Agregar margen cero solo cuando haces scroll
     }
   }
+
   removeScrolledStyles() {
     const navbarElement = this.el.nativeElement.querySelector('.custom-navbar');
 
@@ -56,14 +62,19 @@ export class NavbarComponent {
     const h2 = this.el.nativeElement.querySelector('h2');
 
     if (links) {
-      links.forEach((link: { style: { color: string; }; }) => {
+      links.forEach((link: { style: { color: string; margin: string; }; }) => {
         link.style.color = 'white';
+        link.style.margin = ''; // Restaurar el margen original
       });
     }
 
     if (h2) {
       h2.style.color = 'white';
+      h2.style.margin = ''; // Restaurar el margen original
     }
+
   }
 
+
+  
 }

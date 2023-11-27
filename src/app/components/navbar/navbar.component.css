@@ -26,6 +26,12 @@ h2 {
 a {
     margin-right: 15px;
     margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+    transition: opacity 0.3s;
 }
 
 button {
@@ -47,17 +53,13 @@ button {
     color: black !important;
 }
 
-.nav-link,
-.navbar-brand {
-    color: white !important;
-}
-
 .nav-link {
     position: relative;
     display: inline-block;
-    /* Necesario para que el pseudoelemento se posicione correctamente */
     text-decoration: none;
-    /* Opcional: Elimina el subrayado por defecto */
+    color: white;
+    opacity: 0.7; 
+    transition: opacity 0.3s;
 }
 
 .nav-link::after {
@@ -65,37 +67,25 @@ button {
     position: absolute;
     width: 0;
     height: 2px;
-    /* Altura de la línea */
     bottom: -3px;
-    /* Distancia de la línea respecto al texto */
     left: 0;
     background-color: white;
-    /* Color de la línea */
     visibility: hidden;
     transition: all 0.3s ease-in-out;
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link.active::after {
     visibility: visible;
     width: 100%;
 }
 
 .custom-navbar.scrolled .nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    /* Altura de la línea */
-    bottom: -3px;
-    /* Distancia de la línea respecto al texto */
-    left: 0;
     background-color: black !important;
-    /* Color de la línea */
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
 }
 
-.custom-navbar.scrolled .nav-link:hover::after {
+.custom-navbar.scrolled .nav-link:hover::after,
+.custom-navbar.scrolled .nav-link.active::after {
     visibility: visible;
     width: 100%;
 }
