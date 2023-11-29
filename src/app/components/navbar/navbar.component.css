@@ -1,3 +1,5 @@
+@import "~font-awesome/css/font-awesome.css";
+
 .navbar {
     transition: 0.3s;
     margin: 0 !important;
@@ -89,5 +91,87 @@ button {
 .custom-navbar.scrolled .nav-link.active::after {
     visibility: visible;
     width: 100%;
+}
+
+
+
+body {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+
+.line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #000;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+}
+
+.ham1 .top {
+    stroke-dasharray: 40 139;
+}
+
+.ham1 .bottom {
+    stroke-dasharray: 40 180;
+}
+
+.ham1.active .top {
+    stroke-dashoffset: -98px;
+}
+
+.ham1.active .bottom {
+    stroke-dashoffset: -138px;
+}
+
+svg {
+    height: 35px;
+    width: 35px;
+    border: none;
+}
+
+.navbar-toggler:focus {
+
+    box-shadow: none;
+}
+@media screen and (max-width: 767px) {
+    #titulo_portafolio {
+        margin-left: 90px;
+    }
+
+    a {
+        margin-top: 10px !important;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    a {
+        margin-top: 10px !important;
+    }
 }
 
