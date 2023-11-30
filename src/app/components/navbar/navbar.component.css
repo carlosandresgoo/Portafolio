@@ -15,8 +15,11 @@
 
 h2 {
     color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    text-transform: uppercase;
     margin-bottom: 0;
-    margin-left: 80px;
+    margin-left: 70px;
     margin-top: 20px;
 }
 

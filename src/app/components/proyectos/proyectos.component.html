@@ -1,11 +1,24 @@
-<div class="contenedor-card d-flex justify-content-center align-items-center">
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+<div class="d-flex flex-column flex-wrap align-items-center text-center" ngxScrollReveal>
+    <h2 style="color: white; margin-top: 80px; margin-bottom: 30px;">Tecnologías empleadas</h2>
+    <div class="iconos-tecnologias">
+        <ul class="custom-list d-flex flex-wrap">
+            <li class="list-item d-flex flex-column"><i><img src="../../../assets/html-icon.png"></i> HTML</li>
+            <li class="list-item d-flex flex-column"><i><img src="../../../assets/css-icon.png"></i> CSS</li>
+            <li class="list-item d-flex flex-column"><i><img src="../../../assets/vue-icon.png"></i> Vue.js</li>
+            <li class="list-item d-flex flex-column"><i><img src="../../../assets/angular-icon.png"></i> Angular</li>
+            <li class="list-item d-flex flex-column"><i><img src="../../../assets/javascript-icon.png"></i> JavaScript</li>
+            <li class="list-item d-flex flex-column"><i><img src="../../../assets/java-icon.png"></i> Java</li>
+            <li class="list-item d-flex flex-column"><i><img src="../../../assets/Postgre-icon.png"></i> PostgreSQL</li>
+        </ul>
+    </div>
+    <div class="contenedor-card d-flex flex-wrap">
+        <div *ngFor="let proyecto of proyectos" class="card" ngxScrollReveal>
+            <img [src]="proyecto.imagen" class="card-img-top" alt="{{ proyecto.nombre }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ proyecto.nombre }}</h5>
+                <p class="card-text">{{ proyecto.descripcion }}</p>
+                <a [href]="proyecto.url" class="btn btn-primary mt-3" target="_blank">Ir</a>
+            </div>
         </div>
     </div>
 </div>

@@ -16,7 +16,7 @@
     height: 430px;
     width: 700px;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: rgb(230, 230, 230);
     position: relative;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     font-family: 'Poppins', sans-serif;
@@ -34,7 +34,7 @@
 
 .container .card .left-side {
     width: 50%;
-    background-color: #fff;
+    background-color: rgb(230, 230, 230);
     height: 100%;
 
 }
@@ -53,15 +53,7 @@
     font-weight: 8000;
 }
 
-.form .left-side .top-div span {
-    height: 7px;
-    width: 7px;
-    border-radius: 50%;
-    background-color: red;
-    position: absolute;
-    left: 67px;
-    top: 46px;
-}
+
 
 .form .left-side .top-div p {
     font-size: 14px;

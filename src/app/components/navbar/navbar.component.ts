@@ -30,8 +30,7 @@
   
       if (navbarElement) {
         if (this.navbarScrolled) {
-          navbarElement.style.background = 'rgb(156, 155, 155)';
-          navbarElement.style.background = 'radial-gradient(circle, rgba(156,155,155,1) 1%, rgba(162,161,162,1) 23%, rgba(173,173,174,1) 66%)';
+          navbarElement.style.background = 'rgb(230, 230, 230)';
         } else {
           navbarElement.style.background = 'rgba(255, 255, 255, 0.01)';
         }

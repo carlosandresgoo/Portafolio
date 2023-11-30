@@ -10,8 +10,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
 
-
 // módulos de angular materials
+
 
 
 

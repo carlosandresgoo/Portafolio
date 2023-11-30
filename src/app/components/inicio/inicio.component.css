@@ -2,7 +2,7 @@
 .foto {
     width: 380px;
     height: 300px;
-    border-radius: 50%;
+    border-radius: 90%;
     overflow: hidden;
     cursor: pointer;
     margin-top: 100px;
@@ -28,18 +28,6 @@ h3 {
 
 a {
     text-decoration: none;
-}
-
-
-.contenedor-entrada {
-    opacity: 0;
-    transform: translateY(100px);
-    transition: opacity 1s ease-in-out, transform 1s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-.contenedor-entrada.show {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 @media screen and (max-width: 767px) {
