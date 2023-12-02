@@ -28,6 +28,11 @@ h3 {
 
 a {
     text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    transform: scale(1.05);
 }
 
 @media screen and (max-width: 767px) {

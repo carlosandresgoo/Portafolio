@@ -9,6 +9,7 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
+import { SubirIconoComponent } from './components/subir-icono/subir-icono.component';
 
 // módulos de angular materials
 
@@ -22,7 +23,8 @@ import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
     Iniciocomponents,
     ProyectosComponent,
     ContactoComponent,
-    SobreMiComponent
+    SobreMiComponent,
+    SubirIconoComponent
   ],
   imports: [
     BrowserModule,
