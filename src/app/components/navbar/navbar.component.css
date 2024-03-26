@@ -1,0 +1,180 @@
+@import "~font-awesome/css/font-awesome.css";
+
+.navbar {
+    transition: 0.3s;
+    margin: 0 !important;
+    margin-top: 20px;
+}
+
+.navbar.fixed-top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.navbar-nav {
+    margin-right: 80px;
+}
+
+a {
+    margin-right: 15px;
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.custom-navbar {
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.custom-navbar.scrolled {
+    background-color: white;
+}
+
+.custom-navbar.scrolled .nav-link,
+.custom-navbar.scrolled .navbar-brand {
+    color: black !important;
+}
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    visibility: visible;
+    width: 100%;
+}
+
+.custom-navbar.scrolled .nav-link::after {
+    background-color: black !important;
+}
+
+.custom-navbar.scrolled .nav-link:hover::after,
+.custom-navbar.scrolled .nav-link.active::after {
+    visibility: visible;
+    width: 100%;
+}
+
+
+
+body {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+
+.line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #000;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+}
+
+.ham1 .top {
+    stroke-dasharray: 40 139;
+}
+
+.ham1 .bottom {
+    stroke-dasharray: 40 180;
+}
+
+.ham1.active .top {
+    stroke-dashoffset: -98px;
+}
+
+.ham1.active .bottom {
+    stroke-dashoffset: -138px;
+}
+
+svg {
+    height: 35px;
+    width: 35px;
+    border: none;
+}
+
+.navbar-toggler:focus {
+
+    box-shadow: none;
+}
+@media screen and (max-width: 767px) {
+    #titulo_portafolio {
+        margin-left: 90px;
+    }
+
+    a {
+        margin-top: 10px !important;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    a {
+        margin-top: 10px !important;
+    }
+}
+
