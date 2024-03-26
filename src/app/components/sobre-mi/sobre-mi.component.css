@@ -13,8 +13,8 @@
 }
 
 .container .card {
-    height: 430px;
-    width: 700px;
+    height: 600px;
+    width: 1000px;
     border-radius: 10px;
     background-color: rgb(230, 230, 230);
     position: relative;
@@ -54,7 +54,6 @@
 }
 
 
-
 .form .left-side .top-div p {
     font-size: 14px;
 }
@@ -84,49 +83,6 @@
     font-size: 14px;
 }
 
-.form .left-side .icons {
-    padding: 15px 45px;
-    font-size: 20px;
-    position: relative;
-}
-
-.form .left-side .icons .fa-instagram {
-    position: absolute;
-    right: -80px;
-    top: 23px;
-    transition: all 0.5s;
-}
-
-.form .left-side .icons .fa-twitter {
-    position: absolute;
-    right: -60px;
-    top: 23px;
-    transition: all 0.5s;
-    transition-delay: 0.2s;
-}
-
-.container .card:hover .icons .fa-instagram {
-    right: 130px;
-}
-
-.container .card:hover .icons .fa-twitter {
-    right: 60px;
-}
-
-.form .left-side .icons button {
-    height: 30px;
-    width: 100px;
-    background-color: #ff4646;
-    border-radius: 60px;
-    border: none;
-    color: white;
-    transition: all 0.5s;
-}
-
-.form .left-side .icons button:hover {
-    background-color: #f10808;
-}
-
 .form .left-side .last-div {
     display: flex;
     justify-content: space-between;
@@ -136,63 +92,6 @@
     font-weight: 600px;
 }
 
-.hexa .hexagonal {
-    position: relative;
-    top: 2px;
-}
-
-.hexa .hexagonal small {
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    border: 1px solid #ccc;
-}
-
-.card:hover .hexa .hexagonal small:nth-child(1) {
-    position: absolute;
-    top: 9px;
-    left: -17px;
-    opacity: 1;
-}
-
-.card:hover .hexa .hexagonal small:nth-child(2) {
-    position: absolute;
-    top: 2px;
-    left: -25px;
-    opacity: 1;
-}
-
-.card:hover .hexa .hexagonal small:nth-child(3) {
-    position: absolute;
-    top: -1px;
-    left: -15px;
-    opacity: 1;
-}
-
-
-.hexa .hexagonal small:nth-child(1) {
-    position: absolute;
-    top: 19px;
-    left: -17px;
-    opacity: 0;
-    transition: all 0.5s;
-}
-
-.hexa .hexagonal small:nth-child(2) {
-    position: absolute;
-    top: -12px;
-    left: -35px;
-    opacity: 0;
-    transition: all 0.5s;
-}
-
-.hexa .hexagonal small:nth-child(3) {
-    position: absolute;
-    top: -12px;
-    left: -0px;
-    opacity: 0;
-    transition: all 0.5s;
-}
 
 .container .card .right-side {
     width: 50%;
@@ -200,11 +99,67 @@
     height: 100%;
     z-index: 10;
 }
-img{
+.img_andres{
     height: 100%;
     width: 100%;
     background-position: center;
 }
+
+.descarga-cv {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+}
+
+.btn-descargar {
+  display: inline-flex;
+  align-items: center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-descargar:hover {
+  background-color: #0056b3;
+}
+
+.icono-descargar {
+  margin-right: 0.5rem;
+}
+
+.texto-descargar {
+  font-weight: bold;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-md-6 {
+  width: 48%;
+  padding: 1rem;
+  background-color:rgb(230, 230, 230);
+  border-radius: 0.25rem;
+}
+
+h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.bordered-right {
+  border-right: 5px solid #333;
+}
+.bordered-left {
+  border-left: 5px solid #333;
+}
+
+
+
 
 @media (max-width:750px) {
     .container .card {

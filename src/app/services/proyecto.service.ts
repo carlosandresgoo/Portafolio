@@ -11,7 +11,7 @@ export class ProyectoService {
         { imagen: 'assets/oso_fermentados.jpeg', nombre: 'Fermentados', url: 'https://github.com/JsantiAristi/s-sfermentados_front', descripcion: 'E-commerce dedicado a la venta de vinos, macerados y cervezas.' },
         { imagen: 'assets/web_scraping.JPG', nombre: 'Web scraping', url: 'https://github.com/carlosandresgoo/Web-scraping', descripcion: ' Programa dedicado a extrar información de sitios web de manera automatizada.' },
         { imagen: 'assets/petshop.JPG', nombre: 'Petshop-Patitas', url: 'https://patitas-petshop.netlify.app/pages/juguetes', descripcion: 'E-commerce dedicado a la venta de  productos veterinarios para mascotas.' },
-        { imagen: 'assets/take_notes.png', nombre: 'Take_Notes', url: 'https://takenotes-zsmo.onrender.com/', descripcion: 'E-commerce dedicado a la venta de  productos veterinarios para mascotas.' },
+        { imagen: 'assets/take_notes.png', nombre: 'Take_Notes', url: 'https://takenotes-zsmo.onrender.com/', descripcion: 'Take_notes es una página web que  permite organizar tareas de manera visual. ' },
     ];
     constructor() { }
 
