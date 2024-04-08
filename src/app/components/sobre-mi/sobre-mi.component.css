@@ -12,6 +12,16 @@
     align-items: center;
 }
 
+.sobre-title {
+  color: white;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-top: 80px;
+}
+
 .container .card {
     height: 600px;
     width: 1000px;
@@ -156,6 +166,23 @@ h2 {
 }
 .bordered-left {
   border-left: 5px solid #333;
+}
+
+p {
+  text-align: justify;
+}
+
+li{
+font-size: .8rem;
+}
+span{
+  padding: .2rem;
+  font-size: .8rem;
+}
+ul li {
+  width: 210px;
+  margin-bottom: 20px;
+
 }
 
 
